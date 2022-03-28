@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faVk } from "@fortawesome/free-brands-svg-icons";
 
 //import styled, { css } from 'styled-components';
-import logo from './logo.png';
+import logo from './img/logo-sfedu.png';
 import { Routes, Route, Link } from 'react-router-dom';
 
 import { HomePage } from './pages/HomePage';
@@ -71,7 +71,7 @@ function App() {
                 <p>Despite growth of the Internet over the past seven years, the use of toll-free phone numbers
                   in television advertising continues.</p>
                 <div className="social-links">
-                  <h6>Follow us</h6>
+                  <h6>Связаться с нами</h6>
                   <a href="https://vk.com/club101308251"><FontAwesomeIcon icon={faVk} /></a>
                   <a href="https://www.instagram.com/ssc_sfedu/"><FontAwesomeIcon icon={faInstagram} /></a>
                 </div>
@@ -110,22 +110,22 @@ function App() {
             </div>
             <div class="col-lg-3">
               <div class="footer-widget">
-                <h5>Get Info</h5>
+                <h5>Получить информацию</h5>
                 <ul class="footer-info">
                   <li>
                     <i class="fa fa-phone"></i>
-                    <span>Phone:</span>
-                    (12) 345 6789
+                    <span>Телефон:</span>
+                    8(8634)37-18-82
                   </li>
                   <li>
                     <i class="fa fa-envelope-o"></i>
-                    <span>Email:</span>
-                    Colorlib.info@gmail.com
+                    <span>Почта:</span>
+                    fv@tgn.sfedu.ru
                   </li>
                   <li>
                     <i class="fa fa-map-marker"></i>
-                    <span>Address</span>
-                    Iris Watson, Box 283 8562, NY
+                    <span>Адресс</span>
+                    г. Таганрог, пер. Некрасовский, 44, корпус "Д", аудитория Д-232-1А
                   </li>
                 </ul>
               </div>
