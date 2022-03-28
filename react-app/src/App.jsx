@@ -1,5 +1,9 @@
 import './css/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+// get our fontawesome imports
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faVk } from "@fortawesome/free-brands-svg-icons";
+
 //import styled, { css } from 'styled-components';
 import logo from './logo.png';
 import { Routes, Route, Link } from 'react-router-dom';
@@ -23,11 +27,8 @@ function App() {
             </Link>
           </div>
           <div className="top-social">
-            <Link to="#"><i class="fa fa-facebook"></i></Link>
-            <Link to="#"><i class="fa fa-twitter"></i></Link>
-            <Link to="#"><i class="fa fa-google-plus"></i></Link>
-            <Link to="#"><i class="fa fa-linkedin"></i></Link>
-            <Link to="#"><i class="fa fa-instagram"></i></Link>
+            <a href="https://vk.com/club101308251"><FontAwesomeIcon icon={faVk} /></a>
+            <a href="https://www.instagram.com/ssc_sfedu/"><FontAwesomeIcon icon={faInstagram} /></a>
           </div>
           <div className="container">
             <div className="nav-menu">
@@ -71,11 +72,8 @@ function App() {
                   in television advertising continues.</p>
                 <div className="social-links">
                   <h6>Follow us</h6>
-                  <Link to="#"><i class="fa fa-facebook"></i></Link>
-                  <Link to="#"><i class="fa fa-twitter"></i></Link>
-                  <Link to="#"><i class="fa fa-google-plus"></i></Link>
-                  <Link to="#"><i class="fa fa-linkedin"></i></Link>
-                  <Link to="#"><i class="fa fa-instagram"></i></Link>
+                  <a href="https://vk.com/club101308251"><FontAwesomeIcon icon={faVk} /></a>
+                  <a href="https://www.instagram.com/ssc_sfedu/"><FontAwesomeIcon icon={faInstagram} /></a>
                 </div>
               </div>
             </div>
