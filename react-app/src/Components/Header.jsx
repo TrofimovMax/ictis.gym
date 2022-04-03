@@ -1,14 +1,15 @@
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // get our fontawesome imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faVk } from "@fortawesome/free-brands-svg-icons";
 
 import logo from '../img/logo-sfedu.png';
 
-function HeaderHome() {
+function Header() {
     return (
         <>
-            <header className="header-section">
+            {/* Header Section Begin */}
+            <header className="header-section header-normal">
                 <div className="container-fluid">
                     <div className="logo">
                         <Link to="/">
@@ -23,8 +24,8 @@ function HeaderHome() {
                         <div className="nav-menu">
                             <nav className="mainmenu mobile-menu">
                                 <ul>
-                                    <li><Link className="active" to="/"> Главная </Link></li>
-                                    <li><Link to="/about"> О нас </Link></li>
+                                    <li><Link to="/"> Главная </Link></li>
+                                    <li><Link className="active" to="/about"> О нас </Link></li>
                                     <li><Link to="/schedule"> Расписание </Link></li>
                                     <li><Link to="/news"> Новости </Link></li>
                                     <li><Link to="/contacts"> Контакты </Link></li>
@@ -32,13 +33,12 @@ function HeaderHome() {
                             </nav>
                         </div>
                     </div>
-                    <div className="mobile-menu-wrap">
-
-                    </div>
+                    <div id="mobile-menu-wrap"></div>
                 </div>
             </header>
+            {/* Header End */}
         </>
-    );
+    )
 }
 
-export { HeaderHome };
+export { Header };

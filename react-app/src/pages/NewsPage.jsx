@@ -1,6 +1,13 @@
+import {Header} from '../Components/Header';
 
 function NewsPage() {
-    return <h1>Привет, NewsPage! </h1>;
+    return (
+        <>
+            <Header>
+                
+            </Header>
+        </>
+    );
 }
 
 export {NewsPage};

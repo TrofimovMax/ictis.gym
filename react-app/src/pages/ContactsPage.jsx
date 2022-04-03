@@ -1,5 +1,13 @@
+import {Header} from '../Components/Header';
+
 function ContactsPage() {
-    return <h1>Привет, ContactsPage! </h1>;
+    return (
+        <>
+            <Header>
+                
+            </Header>
+        </>
+    );
 }
 
 export {ContactsPage};

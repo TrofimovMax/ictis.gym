@@ -1,5 +1,7 @@
 import { Slider } from '../Components/Slider';
 
+import {HeaderHome} from '../Components/HeaderHome';
+
 import homeAbout from '../img/home-about.jpg';
 import featureImage from '../img/feature/feature-1.jpg';
 import featureImage2 from '../img/feature/feature-2.jpg';
@@ -34,12 +36,16 @@ function HomePage() {
 
     return (
         <>
-            <section className="hero-section">
-                <Slider>
+            <>
+                <HeaderHome>
 
-                </Slider>
-            </section>
+                </HeaderHome>
+                <section className="hero-section">
+                    <Slider>
 
+                    </Slider>
+                </section>
+            </>
             {/* Feature Section Begin */}
             <section className="feature-section">
                 <div className="container-fluid">

@@ -15,15 +15,10 @@ import { ContactsPage } from './pages/ContactsPage';
 import { NewsPage } from './pages/NewsPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { SchedulePage } from './pages/SchedulePage';
-import {HeaderHome} from './Components/HeaderHome';
 
 function App() {
   return (
     <>
-      <HeaderHome>
-
-      </HeaderHome>
-      
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />

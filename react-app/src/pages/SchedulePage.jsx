@@ -1,5 +1,13 @@
+import {Header} from '../Components/Header';
+
 function SchedulePage() {
-    return <h1>Привет, SchedulePage! </h1>;
+    return (
+        <>
+            <Header>
+                
+            </Header>
+        </>
+    );
 }
 
 export {SchedulePage};
