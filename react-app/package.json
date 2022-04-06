@@ -4,6 +4,11 @@
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.1.1",
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-brands-svg-icons": "^6.1.1",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -15,11 +20,13 @@
     "graphql": "^16.3.0",
     "graphql-tag": "^2.12.6",
     "react": "^18.0.0",
+    "react-bootstrap": "^2.2.3",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
+    "react-yandex-maps": "^4.6.0",
     "web-vitals": "^2.1.0",
-    "yandex-map": "^1.0.17"
+    "yandex-map-react": "^1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
