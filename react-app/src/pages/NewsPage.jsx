@@ -1,4 +1,5 @@
 import {Header} from '../Components/Header';
+import {News} from '../Components/News/News';
 
 function NewsPage() {
     return (
@@ -6,6 +7,7 @@ function NewsPage() {
             <Header>
                 
             </Header>
+            <News />
         </>
     );
 }
