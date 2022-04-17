@@ -2,15 +2,20 @@ import React from "react";
 import "./NewsItem.css";
 
 const NewsItem = ({ post: { title, body,
-    imgUrl, author }, index }) => {
+    imgUrl, categories, date } }) => {
     return (
-        <div className="col-lg-4 col-sm-6 mix crossfit workout">
-            <div className=".blog-item">
-                <img className="image" src={imgUrl} alt="post" />
-                <div className="blog-text">
+        <div className="news-wrapper">
+            <div className="news-item">
+                <div className="image-info">
+                    <img className="image" src={imgUrl} alt="post" />
+                    <div className="date-category">
+                        <h4> categories:<h6>{categories}</h6></h4>
+                        <h6> date: {date}</h6>
+                    </div>
+                </div>
+                <div className="news-text">
                     <h4 className="heading">{title}</h4>
                     <p>{body}</p>
-                    <h6 className="text-white">categories: {author}</h6> 
                 </div>
             </div>
         </div>

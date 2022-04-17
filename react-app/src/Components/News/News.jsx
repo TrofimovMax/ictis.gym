@@ -14,8 +14,58 @@ const News = () => {
         the development of web pages, many non-browser 
         environments also use it. JavaScript can be 
         used for Client-side developments as well as 
+        Server-side developmentsJavaScript is the world most popular 
+        lightweight, interpreted compiled programming 
+        language. It is also known as scripting 
+        language for web pages. It is well-known for 
+        the development of web pages, many non-browser 
+        environments also use it. JavaScript can be 
+        used for Client-side developments as well as 
+        Server-side developmentsJavaScript is the world most popular 
+        lightweight, interpreted compiled programming 
+        language. It is also known as scripting 
+        language for web pages. It is well-known for 
+        the development of web pages, many non-browser 
+        environments also use it. JavaScript can be 
+        used for Client-side developments as well as 
+        Server-side developmentsJavaScript is the world most popular 
+        lightweight, interpreted compiled programming 
+        language. It is also known as scripting 
+        language for web pages. It is well-known for 
+        the development of web pages, many non-browser 
+        environments also use it. JavaScript can be 
+        used for Client-side developments as well as 
+        Server-side developmentsJavaScript is the world most popular 
+        lightweight, interpreted compiled programming 
+        language. It is also known as scripting 
+        language for web pages. It is well-known for 
+        the development of web pages, many non-browser 
+        environments also use it. JavaScript can be 
+        used for Client-side developments as well as 
+        Server-side developmentsJavaScript is the world most popular 
+        lightweight, interpreted compiled programming 
+        language. It is also known as scripting 
+        language for web pages. It is well-known for 
+        the development of web pages, many non-browser 
+        environments also use it. JavaScript can be 
+        used for Client-side developments as well as 
+        Server-side developmentsJavaScript is the world most popular 
+        lightweight, interpreted compiled programming 
+        language. It is also known as scripting 
+        language for web pages. It is well-known for 
+        the development of web pages, many non-browser 
+        environments also use it. JavaScript can be 
+        used for Client-side developments as well as 
+        Server-side developmentsJavaScript is the world most popular 
+        lightweight, interpreted compiled programming 
+        language. It is also known as scripting 
+        language for web pages. It is well-known for 
+        the development of web pages, many non-browser 
+        environments also use it. JavaScript can be 
+        used for Client-side developments as well as 
         Server-side developments`,
-            author: "Nishant Singh ",
+            date: '17.04.2022',
+            categories: "Nishant Singh ",
             imgUrl:
                 "https://media.geeksforgeeks.org/img-practice/banner/diving-into-excel-thumbnail.png",
         },
@@ -31,7 +81,9 @@ const News = () => {
         stack for the longest period of time. So, it 
         can be simply seen to follow LIFO(Last In 
         First Out)/FILO(First In Last Out) order.`,
-            author: "Suresh Kr",
+            date: '17.04.2022',
+
+            categories: "Suresh Kr",
             imgUrl:
                 "https://media.geeksforgeeks.org/img-practice/banner/coa-gate-2022-thumbnail.png",
         },
@@ -45,7 +97,9 @@ const News = () => {
         that step-by-step define how a work is to be 
         executed upon in order to get the expected 
         results. `,
-            author: "Monu Kr",
+            date: '17.04.2022',
+
+            categories: "Monu Kr",
             imgUrl:
                 "https://media.geeksforgeeks.org/img-practice/banner/google-test-series-thumbnail.png",
         },
@@ -61,7 +115,9 @@ const News = () => {
         devices; these are known as Network devices
         and include things such as routers, switches,
         hubs, and bridges. `,
-            author: "Sonu Kr",
+            date: '17.04.2022',
+
+            categories: "Sonu Kr",
             imgUrl:
                 "https://media.geeksforgeeks.org/img-practice/banner/cp-maths-java-thumbnail.png",
         },
@@ -76,7 +132,9 @@ const News = () => {
         environments also use it. JavaScript can be 
         used for Client-side developments as well as 
         Server-side developments`,
-            author: "Nishant Singh ",
+            date: '17.04.2022',
+
+            categories: "Nishant Singh ",
             imgUrl:
                 "https://media.geeksforgeeks.org/img-practice/banner/diving-into-excel-thumbnail.png",
         },
@@ -92,7 +150,9 @@ const News = () => {
         stack for the longest period of time. So, it 
         can be simply seen to follow LIFO(Last In 
         First Out)/FILO(First In Last Out) order.`,
-            author: "Suresh Kr",
+            date: '17.04.2022',
+
+            categories: "Suresh Kr",
             imgUrl:
                 "https://media.geeksforgeeks.org/img-practice/banner/coa-gate-2022-thumbnail.png",
         },
@@ -106,7 +166,9 @@ const News = () => {
         that step-by-step define how a work is to be 
         executed upon in order to get the expected 
         results. `,
-            author: "Monu Kr",
+            date: '17.04.2022',
+
+            categories: "Monu Kr",
             imgUrl:
                 "https://media.geeksforgeeks.org/img-practice/banner/google-test-series-thumbnail.png",
         },
@@ -122,7 +184,9 @@ const News = () => {
         devices; these are known as Network devices
         and include things such as routers, switches,
         hubs, and bridges. `,
-            author: "Sonu Kr",
+            date: '17.04.2022',
+
+            categories: "Sonu Kr",
             imgUrl:
                 "https://media.geeksforgeeks.org/img-practice/banner/cp-maths-java-thumbnail.png",
         },
@@ -131,10 +195,20 @@ const News = () => {
     return (
         <section className="blog-section blog-page spad">
             <div className="container">
-                <div className="grid-sizer"></div>
-                {blogPosts.map((post, index) => (
-                    <NewsItem key={index} index={index} post={post} />
-                ))}
+                <div className="row">
+                    <div className="col-lg-12 text-center">
+                        <div className="section-title">
+                            <h2>НОВОСТИ</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="container">
+                <div className="news-container">
+                    {blogPosts.map((post, index) => (
+                        <NewsItem post={post} />
+                    ))}
+                </div>
             </div>
         </section>
     );
