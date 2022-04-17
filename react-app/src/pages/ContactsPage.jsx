@@ -1,14 +1,8 @@
-import { Header } from '../Components/Header';
-
 import { YMaps, Map, Placemark, FullscreenControl, ZoomControl } from 'react-yandex-maps';
 
 function ContactsPage() {
     return (
         <>
-            <Header>
-
-            </Header>
-
             {/* Map Section Begin */}
             <div class="contact-map">
                 <YMaps width="inherit" height="inherit">

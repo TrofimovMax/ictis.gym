@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
-import { Header } from '../Components/Header';
-import {SchedulingTable} from '../Components/SchedulingTable';
+import {SchedulingTable} from '../Components/SchedulingTable/SchedulingTable';
 
 
 function SchedulePage() {
@@ -23,9 +22,6 @@ function SchedulePage() {
 
     return (
         <>
-            <Header>
-
-            </Header>
             {/* Class Time Section Begin */}
             <section className="classtime-section class-time-table spad">
                 <div className="container">

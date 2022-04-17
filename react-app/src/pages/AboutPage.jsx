@@ -1,5 +1,3 @@
-import { Header } from '../Components/Header';
-
 import aboutUs from '../img/about-us.jpg';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,9 +6,6 @@ import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 function AboutPage() {
     return (
         <>
-            <Header>
-
-            </Header>
             {/* Aboutus Section Begin */}
             <section class="aboutus-section spad">
                 <div class="container">

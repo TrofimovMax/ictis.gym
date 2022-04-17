@@ -1,7 +1,5 @@
 import { Slider } from '../Components/Slider';
 
-import {HeaderHome} from '../Components/HeaderHome';
-
 import homeAbout from '../img/home-about.jpg';
 import featureImage from '../img/feature/feature-1.jpg';
 import featureImage2 from '../img/feature/feature-2.jpg';
@@ -37,9 +35,6 @@ function HomePage() {
     return (
         <>
             <>
-                <HeaderHome>
-
-                </HeaderHome>
                 <section className="hero-section">
                     <Slider>
 

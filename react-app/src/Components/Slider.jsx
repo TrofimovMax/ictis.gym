@@ -19,9 +19,9 @@ function Slider() {
 
                     <Carousel.Caption>
                         <div className="hero-text">
-                            <h2>JOIN US NOW</h2>
-                            <h1>FITNESS & SPORT</h1>
-                            <Link to="/about" className="primary-btn">Read More</Link>
+                            <h2>ПРИХОДИ К НАМ</h2>
+                            <h1>ЗАНИМАЙСЯ И РАЗВИВАЙСЯ</h1>
+                            <Link to="/about" className="primary-btn">Узнать Больше</Link>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -34,9 +34,9 @@ function Slider() {
 
                     <Carousel.Caption>
                         <div className="hero-text">
-                            <h2>JOIN US NOW</h2>
-                            <h1>FITNESS & SPORT</h1>
-                            <Link to="/about" className="primary-btn">Read More</Link>
+                            <h2>ПРИХОДИ К НАМ</h2>
+                            <h1>ЗАНИМАЙСЯ И РАЗВИВАЙСЯ</h1>
+                            <Link to="/about" className="primary-btn">Узнать Больше</Link>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -49,9 +49,9 @@ function Slider() {
 
                     <Carousel.Caption>
                         <div className="hero-text">
-                            <h2>JOIN US NOW</h2>
-                            <h1>FITNESS & SPORT</h1>
-                            <Link to="/about" className="primary-btn">Read More</Link>
+                            <h2>ПРИХОДИ К НАМ</h2>
+                            <h1>ЗАНИМАЙСЯ И РАЗВИВАЙСЯ</h1>
+                            <Link to="/about" className="primary-btn">Узнать Больше</Link>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>

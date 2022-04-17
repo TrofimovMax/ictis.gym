@@ -10,7 +10,7 @@ const NewsItem = ({ post: { title, body,
                 <div className="blog-text">
                     <h4 className="heading">{title}</h4>
                     <p>{body}</p>
-                    <h5>categories: {author}</h5> 
+                    <h6 className="text-white">categories: {author}</h6> 
                 </div>
             </div>
         </div>

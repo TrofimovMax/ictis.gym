@@ -5,6 +5,7 @@ import { NewsItem } from '../NewsItem/NewsItem';
 const News = () => {
     const blogPosts = [
         {
+            id: 1,
             title: "JAVASCRIPT",
             body: `JavaScript is the world most popular 
         lightweight, interpreted compiled programming 
@@ -19,6 +20,7 @@ const News = () => {
                 "https://media.geeksforgeeks.org/img-practice/banner/diving-into-excel-thumbnail.png",
         },
         {
+            id: 2,
             title: "Data Structure ",
             body: `There are many real-life examples of 
         a stack. Consider an example of plates stacked 
@@ -34,6 +36,7 @@ const News = () => {
                 "https://media.geeksforgeeks.org/img-practice/banner/coa-gate-2022-thumbnail.png",
         },
         {
+            id: 3,
             title: "Algorithm",
             body: `The word Algorithm means “a process 
         or set of rules to be followed in calculations 
@@ -47,6 +50,7 @@ const News = () => {
                 "https://media.geeksforgeeks.org/img-practice/banner/google-test-series-thumbnail.png",
         },
         {
+            id: 4,
             title: "Computer Network",
             body: `An interconnection of multiple devices, 
         also known as hosts, that are connected using 
@@ -62,6 +66,7 @@ const News = () => {
                 "https://media.geeksforgeeks.org/img-practice/banner/cp-maths-java-thumbnail.png",
         },
         {
+            id: 5,
             title: "JAVASCRIPT",
             body: `JavaScript is the world most popular 
         lightweight, interpreted compiled programming 
@@ -76,6 +81,7 @@ const News = () => {
                 "https://media.geeksforgeeks.org/img-practice/banner/diving-into-excel-thumbnail.png",
         },
         {
+            id: 6,
             title: "Data Structure ",
             body: `There are many real-life examples of 
         a stack. Consider an example of plates stacked 
@@ -91,6 +97,7 @@ const News = () => {
                 "https://media.geeksforgeeks.org/img-practice/banner/coa-gate-2022-thumbnail.png",
         },
         {
+            id: 7,
             title: "Algorithm",
             body: `The word Algorithm means “a process 
         or set of rules to be followed in calculations 
@@ -104,6 +111,7 @@ const News = () => {
                 "https://media.geeksforgeeks.org/img-practice/banner/google-test-series-thumbnail.png",
         },
         {
+            id: 8,
             title: "Computer Network",
             body: `An interconnection of multiple devices, 
         also known as hosts, that are connected using 
@@ -123,12 +131,10 @@ const News = () => {
     return (
         <section className="blog-section blog-page spad">
             <div className="container">
-                <div className="row blog-grid">
-                    <div className="grid-sizer"></div>
-                    {blogPosts.map((post, index) => (
-                        <NewsItem key={index} index={index} post={post} />
-                    ))}
-                </div>
+                <div className="grid-sizer"></div>
+                {blogPosts.map((post, index) => (
+                    <NewsItem key={index} index={index} post={post} />
+                ))}
             </div>
         </section>
     );
