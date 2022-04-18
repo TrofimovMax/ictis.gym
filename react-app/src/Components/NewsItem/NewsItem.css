@@ -6,7 +6,7 @@
 .news-item{
 	display: inherit;
 	border-radius: 15px;
-	background-color: #A5A5A5; 
+	background-color: #121212; 
 	margin-bottom: 30px;
 }
 .image {
@@ -20,7 +20,7 @@
 .image-info{
 	display: block;
 	align-items:center;
-	color: #151515;
+	color: #e4381C;
 }
 .date-category{
 	padding: 10px;
@@ -44,13 +44,13 @@
 .news-text p{
     font-size: 20px;
 	font-weight: 600;
-	color: #151515;
+	color: #fff;
 	line-height: 28px;
-	padding: 30px 10px;
+	padding: 10px 10px;
 	margin-bottom: 20px;
 }
 
 .heading{
 	padding-top: 15px;
-	text-align: center;
+	margin-left: 10px;
 }

@@ -1,15 +1,14 @@
-body {
-    background-color: #151515;
+/*---------------------
+  Blog Section
+-----------------------*/
+.section-title h2{
+	color: #fff;
 }
 .news-container {
     display: flexbox;
     justify-content: center;
     align-items: center;
 }
-
-/*---------------------
-  Blog Section
------------------------*/
 
 .blog-section {
 	background: #151515;
