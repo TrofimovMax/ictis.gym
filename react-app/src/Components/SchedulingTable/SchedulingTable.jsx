@@ -1,6 +1,6 @@
 import { Button } from 'react-bootstrap';
 
-function SchedulingTable({ numGym4, numGym5 }) {
+function SchedulingTable({ numGym4, numGym5, switcher, handleSwitchBtn}) {
     const isFull = false; // удалить нах ибо это ты будешь получать с сервера
     // Что может быть лучше шести пятниц на неделе? только 6 воскресений
     // этот массив мб нах не нужен, но если не хочешь переделывать цикл можешь оставить
@@ -24,7 +24,6 @@ function SchedulingTable({ numGym4, numGym5 }) {
                     <table>
                         <thead>
                             <tr>
-                                <th></th>
                                 <th>Понедельник</th>
                                 <th>Вторник</th>
                                 <th>Среда</th>
@@ -40,7 +39,6 @@ function SchedulingTable({ numGym4, numGym5 }) {
                                     return (
                                         <tr> 
                                             {/* самый левый столбец с промежутками массива timeClasses */}
-                                            <td className="workout-time">{time}</td>
                                             {
                                                 dayWeekend.map((day) => {
                                                     // здесь важное условие рендеринга, если у нас нет занятия на это время,
@@ -53,7 +51,7 @@ function SchedulingTable({ numGym4, numGym5 }) {
                                                                     {/* количестов народа 10/15 15/15 и так далее*/}
                                                                     <h6>количество народа?</h6>
                                                                     {/* условие рендеринга кнопки ЗАПИСАТЬСЯ по условию, что ты получишь из query.response*/}
-                                                                    {!isFull ? <Button variant="outline-light">ЗАПИСАТЬСЯ</Button> : <div></div>}
+                                                                    {!isFull ? <Button variant="outline-light" onClick={() => handleSwitchBtn(switcher)}>{switcher}</Button> : <div></div>}
                                                                 </td>
                                                             </>
                                                         )

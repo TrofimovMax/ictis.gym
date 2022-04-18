@@ -8,7 +8,15 @@ function SchedulePage() {
     //  активной странице применяется стиль 
     const [numGym4, setNumGym4] = useState('active');
     const [numGym5, setNumGym5] = useState('');
+    const [switcher, setSwitcher] = useState('ЗАПИСАТЬСЯ');
 
+    const handleSwitchBtn = (switcher) => {
+        if(switcher === 'ЗАПИСАТЬСЯ') {
+            setSwitcher('ОТПИСАТЬСЯ');
+        } else {
+            setSwitcher('ЗАПИСАТЬСЯ');
+        }
+    }
     function changeNumberGym() {
         if(numGym4 === 'active'){
             setNumGym4('');
@@ -46,6 +54,8 @@ function SchedulePage() {
                     <SchedulingTable 
                     numGym4 = {numGym4}
                     numGym5 = {numGym5}
+                    switcher = {switcher}
+                    handleSwitchBtn = {handleSwitchBtn}
                     >
                         
                     </SchedulingTable>
