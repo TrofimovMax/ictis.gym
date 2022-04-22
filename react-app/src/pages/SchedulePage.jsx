@@ -1,32 +1,37 @@
 import { useState } from 'react';
 
-import {SchedulingTable} from '../Components/SchedulingTable/SchedulingTable';
+import { SchedulingTable } from '../Components/SchedulingTable/SchedulingTable';
 
 
 function SchedulePage() {
-    // два веб хука показывают, какая таблица выбрана,
+    // два веб хука показывают, какая таблица выбрана 
     //  активной странице применяется стиль 
-    const [numGym4, setNumGym4] = useState('active');
-    const [numGym5, setNumGym5] = useState('');
+    const [stateGym4, setStateGym4] = useState('active');
+    const [stateGym5, setStateGym5] = useState('');
+    //этот хук показывает какая сейчас таблица выбрана
+    const [currentGym, setcurrentGym] = useState("4");
+    // временно не рабочиая функция состояния кнопки записи
     const [switcher, setSwitcher] = useState('ЗАПИСАТЬСЯ');
 
     const handleSwitchBtn = (switcher) => {
-        if(switcher === 'ЗАПИСАТЬСЯ') {
+        if (switcher === 'ЗАПИСАТЬСЯ') {
             setSwitcher('ОТПИСАТЬСЯ');
         } else {
             setSwitcher('ЗАПИСАТЬСЯ');
         }
     }
-    function changeNumberGym() {
-        if(numGym4 === 'active'){
-            setNumGym4('');
-            setNumGym5('active');
+    function changeNumberGym(clickedBtn) {
+        if (clickedBtn === "4") {
+            setcurrentGym(clickedBtn)
+            setStateGym4('active');
+            setStateGym5('');
         }
-        else {
-            setNumGym5('');
-            setNumGym4('active');
+        if (clickedBtn === "5") {
+            setcurrentGym(clickedBtn)
+            setStateGym5('active');
+            setStateGym4('');
         }
-      }
+    }
 
     return (
         <>
@@ -44,20 +49,18 @@ function SchedulePage() {
                         <div className="col-lg-12">
                             <div className="timetable-controls">
                                 <ul>
-                                    <li className={numGym4} onClick={changeNumberGym}> Зал №4 </li>
-                                    <li className={numGym5} onClick={changeNumberGym}> Зал №5 </li>
+                                    <li key={4} className={stateGym4} onClick={() => changeNumberGym("4")}> Зал №4 </li>
+                                    <li key={5} className={stateGym5} onClick={() => changeNumberGym("5")}> Зал №5 </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     {/* выбранную страницу прокидываю в пропсы, чтобы потом её отрендерить */}
-                    <SchedulingTable 
-                    numGym4 = {numGym4}
-                    numGym5 = {numGym5}
-                    switcher = {switcher}
-                    handleSwitchBtn = {handleSwitchBtn}
+                    <SchedulingTable
+                        switcher={switcher}
+                        handleSwitchBtn={handleSwitchBtn}
                     >
-                        
+
                     </SchedulingTable>
                 </div>
             </section>

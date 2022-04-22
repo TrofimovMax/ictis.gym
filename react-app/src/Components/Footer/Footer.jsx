@@ -29,29 +29,29 @@ function Footer() {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 offset-lg-1">
-                            <div class="footer-widget">
+                        <div className="col-lg-3 offset-lg-1">
+                            <div className="footer-widget">
                                 <h5>Our Blog</h5>
-                                <div class="footer-blog">
-                                    <Link to="#" class="fb-item">
+                                <div className="footer-blog">
+                                    <Link to="#" className="fb-item">
                                         <h6>Most people who work</h6>
-                                        <span class="blog-time"><i class="fa fa-clock-o"></i> Jan 02, 2019</span>
+                                        <span className="blog-time"><i className="fa fa-clock-o"></i> Jan 02, 2019</span>
                                     </Link>
-                                    <Link to="#" class="fb-item">
+                                    <Link to="#" className="fb-item">
                                         <h6>Freelance Design Tricks How </h6>
-                                        <span class="blog-time"><i class="fa fa-clock-o"></i> Jan 02, 2019</span>
+                                        <span className="blog-time"><i className="fa fa-clock-o"></i> Jan 02, 2019</span>
                                     </Link>
-                                    <Link to="#" class="fb-item">
+                                    <Link to="#" className="fb-item">
                                         <h6>have a computer at home have had </h6>
-                                        <span class="blog-time"><i class="fa fa-clock-o"></i> Jan 02, 2019</span>
+                                        <span className="blog-time"><i className="fa fa-clock-o"></i> Jan 02, 2019</span>
                                     </Link>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2">
-                            <div class="footer-widget">
+                        <div className="col-lg-2">
+                            <div className="footer-widget">
                                 <h5>Program</h5>
-                                <ul class="workout-program">
+                                <ul className="workout-program">
                                     <li><Link to="#">Bodybuilding</Link></li>
                                     <li><Link to="#">Running</Link></li>
                                     <li><Link to="#">Streching</Link></li>
@@ -60,22 +60,22 @@ function Footer() {
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="footer-widget">
+                        <div className="col-lg-3">
+                            <div className="footer-widget">
                                 <h5>Получить информацию</h5>
-                                <ul class="footer-info">
+                                <ul className="footer-info">
                                     <li>
-                                        <i class="fa fa-phone"></i>
+                                        <i className="fa fa-phone"></i>
                                         <span>Телефон:</span>
                                         8(8634)37-18-82
                                     </li>
                                     <li>
-                                        <i class="fa fa-envelope-o"></i>
+                                        <i className="fa fa-envelope-o"></i>
                                         <span>Почта:</span>
                                         fv@tgn.sfedu.ru
                                     </li>
                                     <li>
-                                        <i class="fa fa-map-marker"></i>
+                                        <i className="fa fa-map-marker"></i>
                                         <span>Адресс</span>
                                         г. Таганрог, пер. Некрасовский, 44, корпус "Д", аудитория Д-232-1А
                                     </li>
