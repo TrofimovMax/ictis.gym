@@ -1,0 +1,28 @@
+/*---------------------
+  Blog Section
+-----------------------*/
+.section-title h2{
+	color: #fff;
+}
+.news-container {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-section {
+	background: #151515;
+	padding-top: 90px;
+	padding-bottom: 66px;
+}
+
+.blog-section.blog-page {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.blog-section .section-title {
+	margin-bottom: 55px;
+}
+
+

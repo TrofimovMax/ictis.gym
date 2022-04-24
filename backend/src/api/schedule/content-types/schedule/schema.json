@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "schedules",
+  "info": {
+    "singularName": "schedule",
+    "pluralName": "schedules",
+    "displayName": "Schedule",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "schedule_class": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::schedule-class.schedule-class",
+      "inversedBy": "schedules"
+    },
+    "schedule_time": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::schedule-time.schedule-time",
+      "inversedBy": "schedules"
+    },
+    "schedule_day": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::schedule-day.schedule-day",
+      "inversedBy": "schedules"
+    },
+    "schedule_users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user"
+    },
+    "schedule_isFull": {
+      "type": "boolean",
+      "default": false
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "schedule_usrNum": {
+      "type": "integer",
+      "default": 0,
+      "max": 15,
+      "min": 0
+    }
+  }
+}

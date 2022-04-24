@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "schedule_times",
+  "info": {
+    "singularName": "schedule-time",
+    "pluralName": "schedule-times",
+    "displayName": "Schedule_time",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "class_time": {
+      "type": "string"
+    },
+    "schedules": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::schedule.schedule",
+      "mappedBy": "schedule_time"
+    }
+  }
+}

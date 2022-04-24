@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "schedule_days",
+  "info": {
+    "singularName": "schedule-day",
+    "pluralName": "schedule-days",
+    "displayName": "Schedule_day",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "schedules": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::schedule.schedule",
+      "mappedBy": "schedule_day"
+    }
+  }
+}

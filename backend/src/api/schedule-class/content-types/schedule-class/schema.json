@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "schedule_classes",
+  "info": {
+    "singularName": "schedule-class",
+    "pluralName": "schedule-classes",
+    "displayName": "Schedule_class",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "class_num": {
+      "type": "string",
+      "required": true
+    },
+    "schedules": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::schedule.schedule",
+      "mappedBy": "schedule_class"
+    },
+    "slug": {
+      "type": "uid"
+    }
+  }
+}
