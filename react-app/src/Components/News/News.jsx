@@ -2,7 +2,7 @@ import React from "react";
 import './News.css';
 import { NewsItem } from '../NewsItem/NewsItem';
 
-const News = () => {
+const News = ({setActive, setImage}) => {
     const blogPosts = [
         {
             id: 1,
@@ -206,7 +206,11 @@ const News = () => {
             <div className="container">
                 <div className="news-container">
                     {blogPosts.map((post, index) => (
-                        <NewsItem post={post} />
+                        <NewsItem 
+                        setActive = {setActive}
+                        setImage = {setImage}
+                        post={post} 
+                        />
                     ))}
                 </div>
             </div>
