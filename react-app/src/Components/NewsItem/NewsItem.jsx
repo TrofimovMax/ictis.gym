@@ -1,25 +1,44 @@
 import React from "react";
 import "./NewsItem.css";
 
-const NewsItem = ({ post: { title, content,
-    imgUrl, categories, published_at } }) => {
-    return (
-        <div className="news-wrapper">
-            <div className="news-item">
-                <div className="image-info">
-                    <img className="image" src={imgUrl} alt="post" />
-                    <div className="date-category">
-                        <h4> categories:<h6>{categories}</h6></h4>
-                        <h6> date: {published_at}</h6>
+import ReactMarkdown from "react-markdown";
+import Moment from "react-moment";
+
+const NewsItem = ({article, setActive, setImage}) => {
+    if (article) {
+        const imageUrl =
+          process.env.NODE_ENV !== "development"
+            ? article.attributes.image.data.attributes.url
+            : process.env.REACT_APP_BACKEND_URL +
+            article.attributes.image.data.attributes.url;
+
+        return (
+            <div className="news-wrapper">
+                <div className="news-item">
+                    <div className="image-info">
+                        <img className="image" onClick={() => {
+                            setActive(true);
+                            setImage(imageUrl);
+                        }} src={imageUrl} alt="post" />
+                        <div className="date-category">
+                            <h4> categories:<p>{article.attributes.category.data.attributes.name}</p></h4>
+                            <h6>
+                                <Moment format="MMM Do YYYY">
+                                    {article.attributes.published_at}
+                                </Moment> 
+                            </h6>
+                        </div>
+                    </div>
+                    <div className="news-text">
+                        <h4 className="heading">{article.attributes.title}</h4>
+                        <ReactMarkdown>
+                            {article.attributes.content}
+                        </ReactMarkdown>
                     </div>
                 </div>
-                <div className="news-text">
-                    <h4 className="heading">{title}</h4>
-                    <p>{content}</p>
-                </div>
             </div>
-        </div>
-    );
+        );
+    }
 };
 
 export { NewsItem };

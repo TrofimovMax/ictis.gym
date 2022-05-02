@@ -21,7 +21,7 @@ function Slider() {
                         <div className="hero-text">
                             <h2>ПРИХОДИ К НАМ</h2>
                             <h1>ЗАНИМАЙСЯ И РАЗВИВАЙСЯ</h1>
-                            <Link to="/about" className="primary-btn">Узнать Больше</Link>
+                            <Link to="/about" className="primary-btn class-btn">Узнать Больше</Link>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -36,7 +36,7 @@ function Slider() {
                         <div className="hero-text">
                             <h2>ПРИХОДИ К НАМ</h2>
                             <h1>ЗАНИМАЙСЯ И РАЗВИВАЙСЯ</h1>
-                            <Link to="/about" className="primary-btn">Узнать Больше</Link>
+                            <Link to="/about" className="primary-btn class-btn">Узнать Больше</Link>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -51,7 +51,7 @@ function Slider() {
                         <div className="hero-text">
                             <h2>ПРИХОДИ К НАМ</h2>
                             <h1>ЗАНИМАЙСЯ И РАЗВИВАЙСЯ</h1>
-                            <Link to="/about" className="primary-btn">Узнать Больше</Link>
+                            <Link to="/about" className="primary-btn class-btn">Узнать Больше</Link>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>

@@ -1,4 +1,5 @@
 import { Slider } from '../Components/Slider';
+import { Link } from 'react-router-dom';
 
 import homeAbout from '../img/home-about.jpg';
 import featureImage from '../img/feature/feature-1.jpg';
@@ -47,23 +48,29 @@ function HomePage() {
                     <div className="row">
                         <div className="col-md-4">
                             <div className="feature-item set-bg" style={feature1}>
-                                <h3>GROUP CLASSES</h3>
-                                <p>The Sopranos manages to address the biases<br /> and benefits of therapy</p>
-                                <a href="http://sportsfedu.ru/main" className="primary-btn f-btn">Read More</a>
+                                <h3>ГРУППОВЫЕ КЛАССЫ</h3>
+                                <p>
+                                    Нам удаётся сохранять условия для совместной работы студентов в залах,
+                                    чтобы не создавалось очередей
+                                </p>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="feature-item set-bg" style={feature2}>
-                                <h3>PERSONAL TRAINING</h3>
-                                <p>Strep throat is very common during the flu<br /> seasons and it can be preceded</p>
-                                <a href="http://sportsfedu.ru/main" className="primary-btn f-btn">Read More</a>
+                                <h3>ИНДИВИДУАЛЬНЫЙ ПОДХОД</h3>
+                                <p>
+                                    Все студенты приходят с разным уровнем физической подготовки,
+                                    и поэтому мы тчательно следим за нагрузкой для каждого студента
+                                </p>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="feature-item set-bg" style={feature3}>
-                                <h3>Sports Nutrition</h3>
-                                <p>A Human Being’s right to life implies his right to<br /> have the free and unrestricted</p>
-                                <a href="http://sportsfedu.ru/main" className="primary-btn f-btn">Read More</a>
+                                <h3>ПОЛЬЗА О ПОСЕЩЕНИЯ ТРЕНАЖЁРНОГО ЗАЛА</h3>
+                                <p>
+                                    Упражнения на тренажерах приносят организму огромную пользу. Благодаря систематическим тренировкам отмечаются следующие положительные изменения:
+                                    Стимуляция кровообращения, снижение риска развития патологий сердца и сосудов, укрепление костных тканей.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -80,9 +87,9 @@ function HomePage() {
                                 <div className="about-text">
                                     <h2>ДОБРО ПОЖАЛОВАТЬ В ССК ИТА ЮФУ</h2>
                                     <p className="short-details">ictis.gym создан, чтобы помочь студентам узнавать полезную информацию,
-                                     свежие новости</p>
+                                        свежие новости</p>
                                     <p className="long-details">Поход в тренажерный зал — лучший способ отвлечься от рутины и избавится от стресса. </p>
-                                    <a href="http://sportsfedu.ru/main" className="primary-btn about-btn">Learn More</a>
+                                    <Link to="/about" className="primary-btn class-btn">Узнать Больше</Link>
                                 </div>
                             </div>
                             <div className="col-lg-6">
@@ -101,8 +108,11 @@ function HomePage() {
                             <div className="row">
                                 <div className="col-lg-7 m-auto text-center">
                                     <div className="section-title pl-lg-4 pr-lg-4 pl-0 pr-0">
-                                        <h2>Choose Your Program</h2>
-                                        <p>Our Crossfit experts can help you discover new training techniques and exercises that offer a dynamic and efficient full-body workout.</p>
+                                        <h2>Сделай правильный выбор</h2>
+                                        <p>
+                                            При строгом соблюдении рекомендаций наших инструкторов и правильности выполнения техник упражнений.
+                                            Вы ускорите Ваш метаболизм и избавитесь от лишнего веса.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -112,31 +122,28 @@ function HomePage() {
                         <div className="row">
                             <div className="col-lg-3 col-sm-6">
                                 <div className="classes-item set-bg" style={classes1}>
-                                    <h4>Crossfit Level 1</h4>
-                                    <p>Sufferers around the globe will be happy to hear that there are sleep apnea remedies.</p>
-                                    <a href="http://sportsfedu.ru/main" className="primary-btn class-btn">Read More</a>
+                                    <h4>Главное-сделать первый шаг</h4>
+                                    <p>Мы поможем отвлечься от бесконечной учебы и провести психологическую разрядку.</p>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-sm-6">
                                 <div className="classes-item set-bg" style={classes2}>
-                                    <h4>BootCamp</h4>
-                                    <p>The oil, also called linseed oil, has many industrial uses – it is an important ingredient
+                                    <h4>Тренажерные залы</h4>
+                                    <p>
+                                        Многообразия тренажеров для эфективной прокачки всего тела.
                                     </p>
-                                    <a href="http://sportsfedu.ru/main" className="primary-btn class-btn">Read More</a>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-sm-6">
                                 <div className="classes-item set-bg" style={classes3}>
-                                    <h4>Energy Blast</h4>
-                                    <p>It is a very common occurrence like cold or fever depending upon your lifestyle. </p>
-                                    <a href="http://sportsfedu.ru/main" className="primary-btn class-btn">Read More</a>
+                                    <h4>Заряд Энергии</h4>
+                                    <p>Повышение силовых показателей и выносливости.</p>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-sm-6">
                                 <div className="classes-item set-bg" style={classes4}>
-                                    <h4>CLASSIC BODY BALANCE</h4>
-                                    <p>The procedure is usually a preferred alternative to photorefractive keratectomy,</p>
-                                    <a href="http://sportsfedu.ru/main" className="primary-btn class-btn">Read More</a>
+                                    <h4>Баланс тела</h4>
+                                    <p>Проработка всех групп мышечных тканей</p>
                                 </div>
                             </div>
                         </div>

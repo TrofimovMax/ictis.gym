@@ -5,6 +5,7 @@ const ARTICLES_QUERY = gql`
     articles {
       data {
         attributes {
+          publishedAt
           slug
           title
           content

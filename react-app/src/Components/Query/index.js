@@ -1,10 +1,11 @@
 import React from "react";
 import { useQuery } from "@apollo/react-hooks";
 
-const Query = ({ children, query, class_num }) => {
+const Query = ({ children, query, class_num, slug }) => {
   const { data, loading, error } = useQuery(query, {
     variables: { 
-      class_num: class_num
+      class_num: class_num,
+      slug:slug
      }
   });
 

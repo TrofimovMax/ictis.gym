@@ -24,5 +24,20 @@
 .blog-section .section-title {
 	margin-bottom: 55px;
 }
+.category-navbar{
+	display: flex;
+	flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+	list-style-type: none;
+	padding: 20px;
+	margin-top: 20px;
+}
+.filter-link h6{
+	font-weight: 500;
+	color: #e4381C;
+	text-transform: uppercase;
+}
+
 
 

@@ -4,7 +4,7 @@ function ContactsPage() {
     return (
         <>
             {/* Map Section Begin */}
-            <div class="contact-map">
+            <div className="contact-map">
                 <YMaps width="inherit" height="inherit">
                     <Map
                         width='100%'
@@ -17,6 +17,7 @@ function ContactsPage() {
                         }}
                     >
                         <Placemark geometry={[47.202233, 38.935670]} />
+                        <Placemark geometry={[47.205891, 38.940869]} />
                         <ZoomControl options={{ float: 'right' }} />
                         <FullscreenControl />
                     </Map>

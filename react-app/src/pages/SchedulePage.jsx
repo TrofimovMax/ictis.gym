@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import shortid from 'shortid';
 
 import { SchedulingTable } from '../Components/SchedulingTable/SchedulingTable';
 
@@ -6,12 +7,15 @@ import SHEDULE_QUERY from '../queries/shedule/schedule.js';
 import Query from '../Components/Query';
 
 function SchedulePage() {
+    // Массив содержащий номера всех тренажёрных залов 
+    const gymArray = ["4","5",];
+    const FOURTH_GYM = "4";
     // два веб хука показывают, какая таблица выбрана 
     //  активной странице применяется стиль 
     const [stateGym4, setStateGym4] = useState('active');
     const [stateGym5, setStateGym5] = useState('');
     //этот хук показывает какая сейчас таблица выбрана
-    const [currentGym, setcurrentGym] = useState("4");
+    const [currentGym, setcurrentGym] = useState(gymArray[0]);
     // временно не рабочиая функция состояния кнопки записи
     const [switcher, setSwitcher] = useState('ЗАПИСАТЬСЯ');
 
@@ -53,8 +57,14 @@ function SchedulePage() {
                         <div className="col-lg-12">
                             <div className="timetable-controls">
                                 <ul>
-                                    <li key={4} className={stateGym4} onClick={() => changeNumberGym("4")}> Зал №4 </li>
-                                    <li key={5} className={stateGym5} onClick={() => changeNumberGym("5")}> Зал №5 </li>
+                                    {
+                                    gymArray.map((number) => {
+                                        return (
+                                            <li key={shortid.generate()} className={number === FOURTH_GYM ? stateGym4: stateGym5} 
+                                            onClick={() => changeNumberGym(number)}> Зал №{number} </li>
+                                        );
+                                    })
+                                    }
                                 </ul>
                             </div>
                         </div>

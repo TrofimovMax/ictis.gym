@@ -12,7 +12,7 @@ function Footer() {
             {/* Footer Section Begin */}
             <footer className="footer-section">
                 <div className="container">
-                    <div className="row">
+                    <div className="d-flex justify-content-around">
                         <div className="col-lg-3">
                             <div className="footer-logo-item">
                                 <div className="f-logo">
@@ -20,8 +20,9 @@ function Footer() {
                                         <img src={logo} alt="Logo" />
                                     </Link>
                                 </div>
-                                <p>Despite growth of the Internet over the past seven years, the use of toll-free phone numbers
-                                    in television advertising continues.</p>
+                                <p>
+                                    Наш успех - здоровье студентов!
+                                </p>
                                 <div className="social-links">
                                     <h6>Связаться с нами</h6>
                                     <a href="https://vk.com/club101308251"><FontAwesomeIcon icon={faVk} /></a>
@@ -29,40 +30,21 @@ function Footer() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 offset-lg-1">
-                            <div className="footer-widget">
-                                <h5>Our Blog</h5>
-                                <div className="footer-blog">
-                                    <Link to="#" className="fb-item">
-                                        <h6>Most people who work</h6>
-                                        <span className="blog-time"><i className="fa fa-clock-o"></i> Jan 02, 2019</span>
-                                    </Link>
-                                    <Link to="#" className="fb-item">
-                                        <h6>Freelance Design Tricks How </h6>
-                                        <span className="blog-time"><i className="fa fa-clock-o"></i> Jan 02, 2019</span>
-                                    </Link>
-                                    <Link to="#" className="fb-item">
-                                        <h6>have a computer at home have had </h6>
-                                        <span className="blog-time"><i className="fa fa-clock-o"></i> Jan 02, 2019</span>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
                         <div className="col-lg-2">
                             <div className="footer-widget">
-                                <h5>Program</h5>
+                                <h5>Меню</h5>
                                 <ul className="workout-program">
-                                    <li><Link to="#">Bodybuilding</Link></li>
-                                    <li><Link to="#">Running</Link></li>
-                                    <li><Link to="#">Streching</Link></li>
-                                    <li><Link to="#">Weight Loss</Link></li>
-                                    <li><Link to="#">Gym Fitness</Link></li>
+                                    <li><Link to="/"> Главная </Link></li>
+                                    <li><Link className="active" to="/about"> О нас </Link></li>
+                                    <li><Link to="/schedule"> Запись </Link></li>
+                                    <li><Link to="/news"> Новости </Link></li>
+                                    <li><Link to="/contacts"> Контакты </Link></li>
                                 </ul>
                             </div>
                         </div>
                         <div className="col-lg-3">
                             <div className="footer-widget">
-                                <h5>Получить информацию</h5>
+                                <h5>Связаться с нами</h5>
                                 <ul className="footer-info">
                                     <li>
                                         <i className="fa fa-phone"></i>

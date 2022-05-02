@@ -7,12 +7,12 @@ function AboutPage() {
     return (
         <>
             {/* Aboutus Section Begin */}
-            <section class="aboutus-section spad">
-                <div class="container">
-                    <div class="aboutus-page-text">
-                        <div class="row">
-                            <div class="col-xl-9 col-lg-10 m-auto">
-                                <div class="section-title">
+            <section className="aboutus-section spad">
+                <div className="container">
+                    <div className="aboutus-page-text">
+                        <div className="row">
+                            <div className="col-xl-9 col-lg-10 m-auto">
+                                <div className="section-title">
                                     <h2>Кто мы и что мы делаем</h2>
                                     <p>
                                         Студенческий спортивный клуб Южного федерального университета был создан 4 марта 2014 года.
@@ -23,9 +23,9 @@ function AboutPage() {
                             </div>
                         </div>
                         <img src={aboutUs} alt="" />
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="about-us">
+                        <div className="row">
+                            <div className="col-lg-6">
+                                <div className="about-us">
                                     <h4>О нас</h4>
                                     <p>
                                         Кафедра осуществляет подготовку по элективным дисциплинампо физической культуре и
@@ -38,10 +38,15 @@ function AboutPage() {
                                         Реализуется многоуровневые дополнительные образовательные программы по бадминтону,
                                         баскетболу, бодибилдингу, волейболу, йоге, мини-футболу и пулевой стрельбе.
                                     </p>
+                                    <p>
+                                        Студенты ИТА ЮФУ, под руководством преподавателей кафедры физического воспитания,
+                                        ежегодно становятся победителями и призерами спортивных соревнований городского,
+                                        регионального и федерального уровней.
+                                    </p>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="about-quality">
+                            <div className="col-lg-6">
+                                <div className="about-quality">
                                     <h4>НАШИ ЦЕЛИ</h4>
                                     <p>Миссия кафедры физического воспитания УВЦ ЮФУ заключается в осуществлении процесса
                                         физического воспитания, результатом которого является подготовка специалистов нового формата,
