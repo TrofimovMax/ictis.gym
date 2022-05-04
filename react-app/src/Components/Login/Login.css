@@ -1,0 +1,14 @@
+.authentication-section {
+	background: #151515;
+	padding-top: 90px;
+	padding-bottom: 80px;
+}
+.authentication-title{
+    color: #ffffff;
+	margin-bottom: 30px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}

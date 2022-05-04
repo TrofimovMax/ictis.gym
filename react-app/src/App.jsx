@@ -11,6 +11,7 @@ import { ContactsPage } from './pages/ContactsPage';
 import { NewsPage } from './pages/NewsPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { SchedulePage } from './pages/SchedulePage';
+import { Login } from './Components/Login/Login';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
+          <Route path="/login" element={<Login/>} />
           <Route path="about" element={<AboutPage />} />
           <Route path="contacts" element={<ContactsPage />} />
           <Route path="news" element={<NewsPage />} />

@@ -5,6 +5,10 @@
 .footer-section {
 	background: #151515;
 	padding-top: 72px;
+	position: absolute;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
 }
 
 .footer-logo-item {
