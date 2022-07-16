@@ -1,0 +1,53 @@
+.authentication-section {
+	background: #151515;
+	padding-top: 90px;
+	padding-bottom: 80px;
+}
+.authentication-title{
+    color: #ffffff;
+	margin-bottom: 30px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
+/*---------------------------- Other Pages Styles ------------------------------*/
+
+@media only screen and (min-width: 1200px) {
+	.authentication-container{
+        max-width: 30vw;
+    }
+}
+
+/* Medium Device : 1200px */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.authentication-container{
+        max-width: 50vw;
+    }
+}
+
+/* Tablet Device : 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.authentication-container{
+        max-width: 70vw;
+    }
+}
+
+/* Large Mobile : 480px */
+
+@media only screen and (max-width: 767px) {
+	.authentication-container{
+        max-width: 75vw;
+    }
+}
+
+/* Small Mobile : 320px */
+
+@media only screen and (max-width: 479px) {
+	.authentication-container{
+        max-width: 90vw;
+    }
+}

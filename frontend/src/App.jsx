@@ -1,0 +1,36 @@
+import { Routes, Route } from 'react-router-dom';
+import './css/style.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import { Layout } from './Components/Layout';
+
+import { HomePage } from './pages/HomePage';
+import { AboutPage } from './pages/AboutPage';
+import { ContactsPage } from './pages/ContactsPage';
+import { NewsPage } from './pages/NewsPage';
+import { NotFoundPage } from './pages/NotFoundPage';
+import { SchedulePage } from './pages/SchedulePage';
+import { Login } from './Components/Login/Login';
+import { CategoriesPage } from './pages/CategoriesPage'
+
+function App() {
+  localStorage.clear()
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="about" element={<AboutPage />} />
+          <Route path="contacts" element={<ContactsPage />} />
+          <Route path="news" element={<NewsPage />} />
+          <Route path="news/:slug" element={<CategoriesPage />} />
+          <Route path="schedule" element={<SchedulePage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Route>
+      </Routes>
+    </>
+  );
+}
+
+export default App;
